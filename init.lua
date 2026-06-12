@@ -12,7 +12,4 @@ require("vim._core.ui2").enable({
 require("kien.configs")
 require("kien.core")
 
--- require("commands")
--- require("pack")
-
 vim.cmd.colorscheme("moonfly")

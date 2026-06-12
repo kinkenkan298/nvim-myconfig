@@ -2,7 +2,7 @@ local noice = require("noice")
 
 noice.setup({
 	cmdline = {
-		enabled = false,
+		enabled = true,
 	},
 	views = {
 		popupmenu = {

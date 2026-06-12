@@ -68,29 +68,51 @@ vim.diagnostic.config({
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
--- local ok, blink = pcall(require, "blink.cmp")
--- if ok then
--- 	capabilities = blink.get_lsp_capabilities(capabilities)
--- end
+local ok, blink = pcall(require, "blink.cmp")
+if ok then
+	capabilities = blink.get_lsp_capabilities(capabilities)
+end
+
+capabilities.textDocument.completion.completionItem = {
+	documentationFormat = { "markdown", "plaintext" },
+	snippetSupport = true,
+	preselectSupport = true,
+	insertReplaceSupport = true,
+	labelDetailsSupport = true,
+	deprecatedSupport = true,
+	commitCharactersSupport = true,
+	tagSupport = { valueSet = { 1 } },
+	resolveSupport = {
+		properties = {
+			"documentation",
+			"detail",
+			"additionalTextEdits",
+		},
+	},
+}
 
 vim.lsp.config("*", {
 	capabilities = capabilities,
 })
 
-local lua_lsp_settings = {
-	Lua = {
-		runtime = { version = "LuaJIT" },
-		workspace = {
-			library = {
-				vim.fn.expand("$VIMRUNTIME/lua"),
-				vim.fn.stdpath("data") .. "/lazy/ui/nvchad_types",
-				vim.fn.stdpath("data") .. "/lazy/lazy.nvim/lua/lazy",
-				"${3rd}/luv/library",
+vim.lsp.config("lua_ls", {
+	settings = {
+		Lua = {
+			runtime = { version = "LuaJIT" },
+			diagnostics = {
+				globals = { "vim" },
+			},
+			completion = {
+				callSnippet = "Replace",
+			},
+			workspace = {
+				library = {
+					vim.fn.expand("$VIMRUNTIME/lua"),
+					vim.fn.stdpath("data") .. "/lazy/ui/nvchad_types",
+					vim.fn.stdpath("data") .. "/lazy/lazy.nvim/lua/lazy",
+					"${3rd}/luv/library",
+				},
 			},
 		},
 	},
-}
-
-vim.lsp.config("lua_ls", {
-	settings = lua_lsp_settings,
 })

@@ -1,54 +1,53 @@
-require("blink.cmp").setup({
-    -- keymaps 
-    keymap = {
-        preset = "enter",
-    },
+local blink = require("blink.cmp")
+blink.build():pwait()
 
-    -- editor insert mode completions
-    completion = {
-        menu = {
-            auto_show = true, -- show on type
-        },
-        documentation = {
-            auto_show = true, -- show function signature/docs 
-        },
-        ghost_text = {
-            enabled = false,
-            show_with_menu = false,
-        },
-        accept = {
-            auto_brackets = {
-                enabled = true,
-            },
-        },
-    },
+blink.setup({
+	-- keymaps
+	keymap = {
+		preset = "enter",
+	},
 
-    -- cmdline completions
-    cmdline = {
-        enabled = true,
-        keymap = { preset = "cmdline" },
-        completion = {
-            menu = { auto_show = true },
-        },
-    },
+	-- editor insert mode completions
+	completion = {
+		menu = {
+			auto_show = true, -- show on type
+		},
+		documentation = {
+			auto_show = true, -- show function signature/docs
+		},
+		ghost_text = {
+			enabled = false,
+			show_with_menu = false,
+		},
+		accept = {
+			auto_brackets = {
+				enabled = true,
+			},
+		},
+	},
 
-    sources = {
-        default = { "lsp", "path", "buffer", "snippets" },
-        providers = {
-            lsp = {
-                opts = {
-                    tailwind_color_icon = "󱓻"
-                }
-            }
-        }
-    },
+	-- cmdline completions
+	cmdline = {
+		enabled = true,
+		keymap = { preset = "cmdline" },
+		completion = {
+			menu = { auto_show = true },
+		},
+	},
 
-    appearance = {
-        use_nvim_cmp_as_default = false,
-        nerd_font_variant = "mono",
-    },
+	sources = {
+		default = { "lsp", "path", "buffer", "snippets" },
+		providers = {
+			lsp = {
+				opts = {
+					tailwind_color_icon = "󱓻",
+				},
+			},
+		},
+	},
 
-    -- snippets = {
-    --     preset = "luasnip"
-    -- },
+	appearance = {
+		use_nvim_cmp_as_default = false,
+		nerd_font_variant = "mono",
+	},
 })

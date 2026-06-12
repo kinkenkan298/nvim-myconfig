@@ -9,9 +9,10 @@ require("vim._core.ui2").enable({
 	},
 })
 
-require("kein.configs")
+require("kien.configs")
+require("kien.core")
 
 -- require("commands")
 -- require("pack")
 
--- vim.cmd.colorscheme("moonfly")
+vim.cmd.colorscheme("moonfly")

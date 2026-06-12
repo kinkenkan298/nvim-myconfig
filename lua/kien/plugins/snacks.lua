@@ -7,7 +7,7 @@ vim.keymap.set("n", "<leader>e", function ()
     git_untracked = true,
     env = { env = ".env" },
     hidden = true,
-    auto_close = false,
+    auto_close = true,
     layout = { preset = "sidebar", preview = false, layout = { position = "left" } },
   })
 end)

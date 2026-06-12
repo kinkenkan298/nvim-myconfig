@@ -9,9 +9,9 @@ require("vim._core.ui2").enable({
 	},
 })
 
-require("options")
-require("keymaps")
-require("commands")
-require("pack")
+require("kein.configs")
 
-vim.cmd.colorscheme("moonfly")
+-- require("commands")
+-- require("pack")
+
+-- vim.cmd.colorscheme("moonfly")

@@ -21,6 +21,9 @@ vim.pack.add({
 	"https://github.com/mason-org/mason.nvim",
 	"https://github.com/mason-org/mason-lspconfig.nvim",
 	"https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim",
+
+	"https://github.com/folke/noice.nvim",
+	"https://github.com/MunifTanjim/nui.nvim",
 })
 
 require("kien.plugins.auto-pairs")
@@ -34,33 +37,4 @@ require("kien.plugins.lsp.lspconfig")
 
 require("kien.plugins.conform-format")
 
---
---
--- vim.keymap.set("n", "<leader>xx", function()
--- 	MiniExtra.pickers.diagnostic()
--- end, { desc = "Mini Picker Diagnostics" })
--- vim.keymap.set("n", "<leader>pk", function()
--- 	MiniExtra.pickers.keymaps()
--- end, { desc = "Search keymaps" })
-
--- local cmp = require("blink.cmp")
--- cmp.build():pwait()
--- cmp.setup({
--- 	keymap = { preset = "enter" },
--- 	completion = {
--- 		documentation = { auto_show = true },
--- 		accept = { auto_brackets = { enabled = false } },
--- 		list = { selection = { preselect = false, auto_insert = true } },
--- 	},
--- 	cmdline = { enabled = false },
--- })
-
--- require("treesitter")
--- require("lsp")
-
--- require("nvim-autopairs").setup({
--- 	fast_wrap = {},
--- 	disable_filetype = { "TelescopePrompt", "vim" },
--- })
-
--- require("conform-format")
+require("kien.plugins.noice")

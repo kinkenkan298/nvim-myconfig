@@ -128,7 +128,7 @@ vim.keymap.set("n", "<leader>ff", function()
 end)
 
 vim.keymap.set("n", "<leader>n", function()
-	snacks.picker.notifications()
+	snacks.notifier.show_history()
 end)
 
 vim.keymap.set("n", "<leader>gg", function()

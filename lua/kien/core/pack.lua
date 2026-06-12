@@ -2,6 +2,9 @@ vim.pack.add({
 	"https://github.com/bluz71/vim-moonfly-colors",
 	-- "https://github.com/nvim-mini/mini.nvim",
 	--
+	{ src = "https://github.com/nvim-telescope/telescope.nvim", branch = "master" }, --enabled
+	"https://github.com/andrew-george/telescope-themes",
+
 	"https://github.com/folke/snacks.nvim",
 
 	"https://github.com/saghen/blink.lib",

@@ -16,6 +16,10 @@ vim.keymap.set("n", "<leader><space>", function()
   snacks.picker.smart()
 end)
 
+vim.keymap.set("n", "<leader>ff", function()
+  snacks.picker.files()
+end)
+
 vim.keymap.set("n", "<leader>n", function()
   snacks.picker.notifications()
 end)

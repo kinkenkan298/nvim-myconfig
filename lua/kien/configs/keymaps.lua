@@ -6,7 +6,7 @@ vim.keymap.set("x", "p", [["_dP]], { desc = "Paste over selection without losing
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "Delete without yanking" })
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
-vim.keymap.set("n", "<C-c>", ":nohl<CR>", { desc = "Clear search highlighting", silent = true })
+vim.keymap.set("n", "<C-c>", ":nohl<CR>", { desc = "Clear search highlighting" })
 
 vim.keymap.set("i", "<C-s>", ":w<CR>")
 

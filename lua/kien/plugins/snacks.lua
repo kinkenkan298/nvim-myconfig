@@ -11,3 +11,7 @@ vim.keymap.set("n", "<leader>e", function ()
     layout = { preset = "sidebar", preview = false, layout = { position = "left" } },
   })
 end)
+
+vim.keymap.set("n", "<leader><space>", function()
+  snacks.picker.smart()
+end)

@@ -15,3 +15,11 @@ end)
 vim.keymap.set("n", "<leader><space>", function()
   snacks.picker.smart()
 end)
+
+vim.keymap.set("n", "<leader>n", function()
+  snacks.picker.notifications()
+end)
+
+vim.keymap.set("n", "<leader>gg", function()
+  snacks.lazygit()
+end)

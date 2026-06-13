@@ -1,15 +1,17 @@
 local treesitter = require("nvim-treesitter")
 
 local ensure_installed = {
-     "lua", 
-     "luadoc", 
-     "printf", 
-     "vim", 
-     "vimdoc",
-     "python",
-     "typescript",
-     "javascript",
-     "html",
+	"lua",
+	"luadoc",
+	"printf",
+	"vim",
+	"vimdoc",
+	"python",
+	"typescript",
+	"javascript",
+	"html",
+	"blade",
+	"php_only",
 }
 
 treesitter.install(ensure_installed)

@@ -48,4 +48,4 @@ require("kien.plugins.conform-format")
 require("kien.plugins.noice")
 require("kien.plugins.colorizer")
 
-require("kien.plugins.nvui")
+require("kien.plugins.nvchad")

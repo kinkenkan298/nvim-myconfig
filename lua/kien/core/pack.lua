@@ -31,6 +31,9 @@ vim.pack.add({
 	"https://github.com/lewis6991/gitsigns.nvim",
 
 	"https://github.com/NvChad/nvim-colorizer.lua",
+
+	"https://github.com/nvchad/ui",
+	"https://github.com/nvchad/base46",
 })
 
 require("kien.plugins.auto-pairs")
@@ -45,3 +48,6 @@ require("kien.plugins.lsp.lspconfig")
 require("kien.plugins.conform-format")
 
 require("kien.plugins.noice")
+require("kien.plugins.colorizer")
+
+require("kien.plugins.nvui")

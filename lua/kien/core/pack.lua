@@ -1,5 +1,5 @@
 vim.pack.add({
-	"https://github.com/bluz71/vim-moonfly-colors",
+	-- "https://github.com/bluz71/vim-moonfly-colors",
 	-- "https://github.com/nvim-mini/mini.nvim",
 	--
 	{ src = "https://github.com/nvim-telescope/telescope.nvim", branch = "master" }, --enabled

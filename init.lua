@@ -17,5 +17,3 @@ end
 
 require("kien.configs")
 require("kien.core")
-
-vim.cmd({ cmd = "ShowkeysToggle" })

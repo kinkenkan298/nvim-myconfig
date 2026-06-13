@@ -95,24 +95,174 @@ vim.lsp.config("*", {
 	capabilities = capabilities,
 })
 
-vim.lsp.config("lua_ls", {
-	settings = {
-		Lua = {
-			runtime = { version = "LuaJIT" },
-			diagnostics = {
-				globals = { "vim" },
+local servers = {
+	html = {},
+	cssls = {
+		filetypes = { "css", "scss", "less" },
+		init_options = { provideFormatter = true },
+		single_file_support = true,
+		settings = {
+			css = {
+				lint = {
+					unknownAtRules = "ignore",
+				},
+				validate = true,
 			},
-			completion = {
-				callSnippet = "Replace",
+			scss = {
+				lint = {
+					unknownAtRules = "ignore",
+				},
+				validate = true,
 			},
-			workspace = {
-				library = {
-					vim.fn.expand("$VIMRUNTIME/lua"),
-					vim.fn.stdpath("data") .. "/lazy/ui/nvchad_types",
-					vim.fn.stdpath("data") .. "/lazy/lazy.nvim/lua/lazy",
-					"${3rd}/luv/library",
+			less = {
+				lint = {
+					unknownAtRules = "ignore",
+				},
+				validate = true,
+			},
+		},
+	},
+	vtsls = {},
+	intelephense = {
+		root_markers = { "index.php", ".git", "composer.json" },
+		settings = {
+			files = {
+				associations = { "*.php" },
+				maxSize = 1000000,
+			},
+			environment = {
+				includePaths = { "vendor" },
+			},
+		},
+	},
+	ts_ls = {
+		workspace_required = false,
+		filetypes = {
+			"javascript",
+			"javascriptreact",
+			"typescript",
+			"typescriptreact",
+		},
+		single_file_support = true,
+		init_options = {
+			preferences = {
+				includeCompletionsForModuleExports = true,
+				includeCompletionsForImportStatements = true,
+			},
+		},
+		settings = {
+			typescript = {
+				inlayHints = {
+					includeInlayParameterNameHints = "all",
+					includeInlayVariableTypeHints = true,
+					includeInlayFunctionParameterTypeHints = true,
+				},
+			},
+			javascript = {
+				inlayHints = {
+					includeInlayParameterNameHints = "none",
+					includeInlayVariableTypeHints = false,
+					includeInlayFunctionParameterTypeHints = false,
 				},
 			},
 		},
 	},
-})
+	emmet_language_server = {
+		filetypes = {
+			"astro",
+			"css",
+			"eruby",
+			"html",
+			"htmlangular",
+			"htmldjango",
+			"javascriptreact",
+			"less",
+			"pug",
+			"sass",
+			"scss",
+			"svelte",
+			"templ",
+			"typescriptreact",
+			"vue",
+			"php",
+		},
+		init_options = {
+			includeLanguages = {},
+			excludeLanguages = {},
+			extensionsPath = {},
+			preferences = {},
+			showAbbreviationSuggestions = true,
+			showExpandedAbbreviation = "always",
+			showSuggestionsAsSnippets = true,
+			syntaxProfiles = {},
+			variables = {},
+		},
+	},
+	pyright = {},
+	clangd = {},
+	tailwindcss = {
+		filetypes = {
+			"html",
+			"css",
+			"javascript",
+			"typescript",
+			"javascriptreact",
+			"typescriptreact",
+			"svelte",
+			"vue",
+			"astro",
+		},
+		init_options = {
+			userLanguages = {
+				astro = "html",
+			},
+		},
+	},
+	jsonls = {},
+	gols = {
+		settings = {
+			gopls = {
+				analyses = {
+					unusedparams = true,
+				},
+				staticcheck = true,
+				gofumpt = true,
+			},
+		},
+	},
+	lua_ls = {
+		settings = {
+			Lua = {
+				runtime = { version = "LuaJIT" },
+				diagnostics = {
+					globals = { "vim" },
+				},
+				completion = {
+					callSnippet = "Replace",
+				},
+				workspace = {
+					library = {
+						vim.fn.expand("$VIMRUNTIME/lua"),
+						vim.fn.stdpath("data") .. "/lazy/ui/nvchad_types",
+						vim.fn.stdpath("data") .. "/lazy/lazy.nvim/lua/lazy",
+						"${3rd}/luv/library",
+					},
+				},
+			},
+		},
+	},
+	astro = {
+		filetypes = { "astro" },
+		init_options = {
+			typescript = {
+				tsdk = vim.fn.stdpath("data")
+					.. "/mason/packages/typescript-language-server/node_modules/typescript/lib",
+			},
+		},
+	},
+}
+
+for name, opts in pairs(servers) do
+	vim.lsp.config(name, opts)
+	vim.lsp.enable(name)
+end

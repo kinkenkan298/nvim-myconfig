@@ -1,1 +1,3 @@
--- require("base64").load_all_highlights()
+require("base46").load_all_highlights()
+
+require("nvchad")

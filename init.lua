@@ -9,7 +9,11 @@ require("vim._core.ui2").enable({
 	},
 })
 
+vim.g.base46_cache = vim.fn.stdpath("data") .. "/base46_cache/"
+
+for _, v in ipairs(vim.fn.readdir(vim.g.base46_cache)) do
+	dofile(vim.g.base46_cache .. v)
+end
+
 require("kien.configs")
 require("kien.core")
-
-vim.cmd.colorscheme("moonfly")

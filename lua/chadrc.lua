@@ -2,7 +2,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "chadracula-evondev",
 	hl_override = {
 		Comment = { italic = true },
 		["@comment"] = { italic = true },
@@ -19,7 +19,7 @@ M.ui = {
 		style = "borderless",
 	},
 	tabufline = {
-		enabled = false,
+		enabled = true,
 	},
 }
 

@@ -35,6 +35,7 @@ vim.pack.add({
 	"https://github.com/nvzone/showkeys",
 	"https://github.com/rachartier/tiny-inline-diagnostic.nvim",
 	"https://github.com/shellRaining/hlchunk.nvim",
+	"https://github.com/folke/lazydev.nvim",
 })
 
 require("kien.plugins.auto-pairs")
@@ -56,3 +57,5 @@ require("kien.plugins.nvchad")
 require("kien.plugins.tiny-diagnostic")
 
 require("kien.plugins.hlchunk")
+
+require("kien.plugins.lazydev")

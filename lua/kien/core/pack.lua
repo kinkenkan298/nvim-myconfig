@@ -33,6 +33,7 @@ vim.pack.add({
 	"https://github.com/nvchad/base46",
 	"https://github.com/nvchad/volt",
 	"https://github.com/nvzone/showkeys",
+	"https://github.com/rachartier/tiny-inline-diagnostic.nvim",
 })
 
 require("kien.plugins.auto-pairs")
@@ -50,3 +51,6 @@ require("kien.plugins.noice")
 require("kien.plugins.colorizer")
 
 require("kien.plugins.nvchad")
+
+require("kien.plugins.tiny-diagnostic")
+

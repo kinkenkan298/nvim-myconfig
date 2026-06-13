@@ -84,6 +84,10 @@
       "rev": "7d324792b7943e4aa16ad007212e6acc6f9fe335",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
+    "tiny-inline-diagnostic.nvim": {
+      "rev": "e930d0a46031645040d5492595b46cdf6ab3514f",
+      "src": "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
+    },
     "ui": {
       "rev": "3e67e9d5325fd47fdbc90ca00a147db2f3525754",
       "src": "https://github.com/nvchad/ui"

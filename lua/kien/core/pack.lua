@@ -32,6 +32,7 @@ vim.pack.add({
 	"https://github.com/nvchad/ui",
 	"https://github.com/nvchad/base46",
 	"https://github.com/nvchad/volt",
+	"https://github.com/nvzone/showkeys",
 })
 
 require("kien.plugins.auto-pairs")

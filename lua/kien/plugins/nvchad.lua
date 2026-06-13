@@ -23,3 +23,25 @@ if require("nvconfig").ui.tabufline.enabled then
 		require("nvchad.tabufline").close_buffer()
 	end, { desc = "buffer close" })
 end
+
+require("showkeys").setup({
+	maxkeys = 3,
+	show_count = false,
+	position = "bottom-center",
+
+	keyformat = {
+		["<BS>"] = "󰁮 ",
+		["<CR>"] = "󰘌",
+		["<Space>"] = "󱁐",
+		["<Up>"] = "󰁝",
+		["<Down>"] = "󰁅",
+		["<Left>"] = "󰁍",
+		["<Right>"] = "󰁔",
+		["<PageUp>"] = "Page 󰁝",
+		["<PageDown>"] = "Page 󰁅",
+		["<M>"] = "Alt",
+		["<C>"] = "Ctrl",
+	},
+})
+
+require("showkeys").open({})

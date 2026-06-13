@@ -36,6 +36,7 @@ vim.pack.add({
 	"https://github.com/rachartier/tiny-inline-diagnostic.nvim",
 	"https://github.com/shellRaining/hlchunk.nvim",
 	"https://github.com/folke/lazydev.nvim",
+	"https://github.com/nvzone/floaterm",
 })
 
 require("kien.plugins.auto-pairs")
@@ -59,3 +60,5 @@ require("kien.plugins.tiny-diagnostic")
 require("kien.plugins.hlchunk")
 
 require("kien.plugins.lazydev")
+
+require("kien.plugins.floaterm")

@@ -16,6 +16,10 @@
       "rev": "619363c30309d29ffa631e67c8183f2a72caa373",
       "src": "https://github.com/stevearc/conform.nvim"
     },
+    "floaterm": {
+      "rev": "fc2efaf25eeefcb33177d5807c0c745e125cf293",
+      "src": "https://github.com/nvzone/floaterm"
+    },
     "gitsigns.nvim": {
       "rev": "25050e4ed39e628282831d4cbecb1850454ce915",
       "src": "https://github.com/lewis6991/gitsigns.nvim"

@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "base46": {
+      "rev": "884b990dcdbe07520a0892da6ba3e8d202b46337",
+      "src": "https://github.com/nvchad/base46"
+    },
     "blink.cmp": {
       "rev": "b02ac65634bdb8af2dcc4eb6c807c060e1e15ae6",
       "src": "https://github.com/saghen/blink.cmp"
@@ -79,6 +83,10 @@
     "telescope.nvim": {
       "rev": "7d324792b7943e4aa16ad007212e6acc6f9fe335",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "ui": {
+      "rev": "3e67e9d5325fd47fdbc90ca00a147db2f3525754",
+      "src": "https://github.com/nvchad/ui"
     },
     "vim-moonfly-colors": {
       "rev": "261664f92ed51cf0c077555b2d4b2530307eac17",

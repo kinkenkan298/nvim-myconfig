@@ -1,0 +1,1 @@
+-- require("base64").load_all_highlights()

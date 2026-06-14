@@ -1,45 +1,4 @@
-vim.pack.add({
-	{ src = "https://github.com/nvim-telescope/telescope.nvim", branch = "master" }, --enabled
-	"https://github.com/andrew-george/telescope-themes",
-
-	"https://github.com/folke/snacks.nvim",
-
-	"https://github.com/saghen/blink.lib",
-	"https://github.com/saghen/blink.cmp",
-
-	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", branch = "main" },
-
-	"https://github.com/windwp/nvim-autopairs",
-
-	"https://github.com/stevearc/conform.nvim",
-	"https://github.com/nvim-lua/plenary.nvim",
-
-	"https://github.com/nvim-tree/nvim-web-devicons",
-	"https://github.com/nvim-lualine/lualine.nvim",
-
-	"https://github.com/neovim/nvim-lspconfig",
-	"https://github.com/mason-org/mason.nvim",
-	"https://github.com/mason-org/mason-lspconfig.nvim",
-	"https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim",
-
-	"https://github.com/folke/noice.nvim",
-	"https://github.com/MunifTanjim/nui.nvim",
-
-	"https://github.com/lewis6991/gitsigns.nvim",
-
-	"https://github.com/NvChad/nvim-colorizer.lua",
-
-	"https://github.com/nvchad/ui",
-	"https://github.com/nvchad/base46",
-	"https://github.com/nvchad/volt",
-	"https://github.com/nvzone/showkeys",
-	"https://github.com/rachartier/tiny-inline-diagnostic.nvim",
-	"https://github.com/shellRaining/hlchunk.nvim",
-	"https://github.com/nvzone/floaterm",
-
-	"https://github.com/folke/lazydev.nvim",
-	{ src = "https://github.com/kylechui/nvim-surround", version = vim.version.range("4.x") },
-})
+vim.pack.add(require("kien.core.specs"))
 
 require("kien.plugins.auto-pairs")
 

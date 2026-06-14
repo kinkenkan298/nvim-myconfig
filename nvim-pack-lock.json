@@ -4,6 +4,10 @@
       "rev": "884b990dcdbe07520a0892da6ba3e8d202b46337",
       "src": "https://github.com/nvchad/base46"
     },
+    "blade-nav.nvim": {
+      "rev": "7ac80b57dbeae975a795fe7ce94ad168dfda7ffa",
+      "src": "https://github.com/ricardoramirezr/blade-nav.nvim"
+    },
     "blink.cmp": {
       "rev": "b02ac65634bdb8af2dcc4eb6c807c060e1e15ae6",
       "src": "https://github.com/saghen/blink.cmp"
@@ -27,6 +31,10 @@
     "hlchunk.nvim": {
       "rev": "06f51922ca43d5cdacf96725c106405fe064c59e",
       "src": "https://github.com/shellRaining/hlchunk.nvim"
+    },
+    "laravel.nvim": {
+      "rev": "0c12031c8c049c423c6c31951beba721115ce6cc",
+      "src": "https://github.com/adalessa/laravel.nvim"
     },
     "lazydev.nvim": {
       "rev": "ff2cbcba459b637ec3fd165a2be59b7bbaeedf0d",
@@ -84,6 +92,10 @@
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "promise-async": {
+      "rev": "119e8961014c9bfaf1487bf3c2a393d254f337e2",
+      "src": "https://github.com/kevinhwang91/promise-async"
     },
     "showkeys": {
       "rev": "cb0a50296f11f1e585acffba8c253b9e8afc1f84",

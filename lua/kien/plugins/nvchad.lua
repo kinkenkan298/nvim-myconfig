@@ -44,4 +44,4 @@ require("showkeys").setup({
 	},
 })
 
-require("showkeys").open({})
+require("showkeys").open()

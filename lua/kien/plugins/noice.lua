@@ -15,19 +15,6 @@ noice.setup({
 				winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
 			},
 		},
-		-- nui's mini popup
-		mini = {
-			timeout = 3500,
-			size = {
-				width = "auto",
-				height = "auto",
-				max_height = 15,
-			},
-			position = {
-				row = -2,
-				col = "100%",
-			},
-		},
 	},
 	lsp = {
 		progress = {

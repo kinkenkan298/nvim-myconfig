@@ -1,13 +1,13 @@
 local options = {
-	preset = "modern", -- Can be: "modern", "classic", "minimal", "powerline", ghost", "simple", "nonerdfont", "amongus"
+	preset = "modern",
 	hi = {
 		error = "DiagnosticError",
 		warn = "DiagnosticWarn",
 		info = "DiagnosticInfo",
 		hint = "DiagnosticHint",
 		arrow = "NonText",
-		background = "CursorLine", -- Can be a highlight or a hexadecimal color (#RRGGBB)
-		mixing_color = "None", -- Can be None or a hexadecimal color (#RRGGBB). Used to blend the background color with the diagnostic background color with another color.
+		background = "CursorLine",
+		mixing_color = "None",
 	},
 	options = {
 		-- Show the source of the diagnostic.

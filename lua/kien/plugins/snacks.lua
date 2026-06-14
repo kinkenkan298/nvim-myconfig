@@ -1,4 +1,6 @@
-require("snacks").setup({
+local snacks = require("snacks")
+
+snacks.setup({
 	styles = {
 		input = {
 			keys = {
@@ -13,6 +15,8 @@ require("snacks").setup({
 		enabled = true,
 		exclude = { "latex" },
 	},
+
+	notifier = {},
 
 	picker = {
 		enabled = true,
@@ -105,8 +109,6 @@ require("snacks").setup({
 	},
 })
 
-local snacks = require("snacks")
-
 vim.keymap.set("n", "<leader>e", function()
 	snacks.explorer({
 		git_status = true,
@@ -134,3 +136,5 @@ end)
 vim.keymap.set("n", "<leader>gg", function()
 	snacks.lazygit()
 end)
+
+snacks.scroll.enable()

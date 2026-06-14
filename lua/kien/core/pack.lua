@@ -35,8 +35,10 @@ vim.pack.add({
 	"https://github.com/nvzone/showkeys",
 	"https://github.com/rachartier/tiny-inline-diagnostic.nvim",
 	"https://github.com/shellRaining/hlchunk.nvim",
-	"https://github.com/folke/lazydev.nvim",
 	"https://github.com/nvzone/floaterm",
+
+	"https://github.com/folke/lazydev.nvim",
+	{ src = "https://github.com/kylechui/nvim-surround", version = vim.version.range("4.x") },
 })
 
 require("kien.plugins.auto-pairs")
@@ -62,3 +64,5 @@ require("kien.plugins.hlchunk")
 require("kien.plugins.lazydev")
 
 require("kien.plugins.floaterm")
+
+require("kien.plugins.surround")

@@ -2,17 +2,19 @@ local laravel = require("laravel")
 laravel.setup({
 	features = {
 		pickers = {
-			enabled = true,
+			enable = true,
 			provider = "snacks",
+		},
+	},
+	extensions = {
+		route_info = { enable = true, view = "top" }, -- "simple" | "top" | "right"
+		completion = {
+			enable = true,
 		},
 	},
 })
 
 vim.g.Laravel = laravel
-
-vim.keymap.set("n", "<leader>ll", function()
-	Laravel.pickers.laravel()
-end)
 
 require("blade-nav").setup({
 	enable = true,
@@ -33,7 +35,9 @@ require("blade-nav").setup({
 	jsconfig_path = "./jsconfig.json",
 
 	-- Extra directories for <x-component> resolution
-	laravel_components_paths = {},
+	laravel_components_paths = {
+		"resources/views/components",
+	},
 
 	-- Navigation targets (gf)
 	handlers = {
@@ -49,10 +53,10 @@ require("blade-nav").setup({
 
 	-- Completion/integration sources
 	integrations = {
-		gf = true,
-		cmp = true,
+		gf = false,
+		cmp = false,
 		blink = true,
-		coq = true,
+		coq = false,
 		health = true,
 	},
 

@@ -25,3 +25,5 @@ require("kien.plugins.lazydev")
 require("kien.plugins.floaterm")
 
 require("kien.plugins.surround")
+
+require("kien.plugins.laravel")

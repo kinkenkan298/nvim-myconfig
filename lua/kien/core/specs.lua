@@ -44,5 +44,5 @@ return {
 	{ src = gh("adalessa/laravel.nvim") },
 	{ src = gh("kevinhwang91/promise-async") },
 	{ src = gh("ricardoramirezr/blade-nav.nvim") },
+	{ src = gh("nvim-neotest/nvim-nio") },
 }
-

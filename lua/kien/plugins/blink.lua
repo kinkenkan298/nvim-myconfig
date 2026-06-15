@@ -11,6 +11,24 @@ blink.setup({
 	completion = {
 		menu = {
 			auto_show = true, -- show on type
+			draw = {
+				components = {
+					kind_icon = {
+						text = function(ctx)
+							if ctx.source_name == "blade-nav" then
+								return " "
+							end
+							return ctx.kind_icon
+						end,
+						highlight = function(ctx)
+							if ctx.source_name == "blade-nav" then
+								return "BlinkCmpKindBladeNav"
+							end
+							return "BlinkCmpKind" .. ctx.kind
+						end,
+					},
+				},
+			},
 		},
 		documentation = {
 			auto_show = true, -- show function signature/docs
@@ -36,12 +54,16 @@ blink.setup({
 	},
 
 	sources = {
-		default = { "lsp", "path", "buffer", "snippets" },
+		default = { "lsp", "blade-nav", "path", "buffer", "snippets" },
 		providers = {
 			lsp = {
 				opts = {
 					tailwind_color_icon = "󱓻",
 				},
+			},
+			["blade-nav"] = {
+				name = "blade-nav",
+				module = "blade-nav.integrations.blink",
 			},
 		},
 	},

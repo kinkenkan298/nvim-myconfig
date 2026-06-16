@@ -2,7 +2,7 @@ require("base46").load_all_highlights()
 
 require("nvchad")
 
-vim.keymap.set("n", "<C-t>", function()
+vim.keymap.set("n", "<leader>tt", function()
 	require("nvchad.themes").open({
 		style = "compact",
 	})

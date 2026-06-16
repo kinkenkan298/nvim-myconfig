@@ -55,7 +55,7 @@ local signs = {
 
 vim.diagnostic.config({
 	signs = { text = signs },
-	virtual_text = true,
+	virtual_text = false,
 	underline = true, -- Always on
 	update_in_insert = false,
 	float = {
@@ -259,6 +259,7 @@ local servers = {
 			},
 		},
 	},
+	rust_analyzer = {},
 }
 
 for name, opts in pairs(servers) do

@@ -45,4 +45,8 @@ return {
 	{ src = gh("kevinhwang91/promise-async") },
 	{ src = gh("ricardoramirezr/blade-nav.nvim") },
 	{ src = gh("nvim-neotest/nvim-nio") },
+
+	{ src = gh("slowy07/mywpm.nvim") },
+
+	{ src = gh("gisketch/triforce.nvim") },
 }

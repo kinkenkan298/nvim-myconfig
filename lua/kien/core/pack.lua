@@ -27,3 +27,7 @@ require("kien.plugins.floaterm")
 require("kien.plugins.surround")
 
 require("kien.plugins.laravel")
+
+require("kien.plugins.mywpm")
+
+require("kien.plugins.triforce")

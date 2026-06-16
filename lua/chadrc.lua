@@ -12,14 +12,16 @@ M.base46 = {
 M.ui = {
 	statusline = {
 		separator_style = "round",
-		theme = "default",
-		enabled = true,
+		theme = "minimal",
 	},
 	telescope = {
 		style = "borderless",
 	},
 	tabufline = {
 		enabled = true,
+	},
+	cmp = {
+		style = "flat_dark",
 	},
 }
 

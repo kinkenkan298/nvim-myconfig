@@ -31,3 +31,7 @@ require("kien.plugins.laravel")
 require("kien.plugins.mywpm")
 
 require("kien.plugins.triforce")
+
+require("kien.plugins.blade")
+
+require("kien.plugins.phptools")

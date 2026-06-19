@@ -49,4 +49,7 @@ return {
 	{ src = gh("slowy07/mywpm.nvim") },
 
 	{ src = gh("gisketch/triforce.nvim") },
+
+	{ src = gh("haringsrob/laravel-dev-tools") },
+	{ src = gh("ccaglak/phptools.nvim") },
 }

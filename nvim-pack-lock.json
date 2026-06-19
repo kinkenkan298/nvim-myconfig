@@ -32,6 +32,10 @@
       "rev": "06f51922ca43d5cdacf96725c106405fe064c59e",
       "src": "https://github.com/shellRaining/hlchunk.nvim"
     },
+    "laravel-dev-tools": {
+      "rev": "6b003d075df5a944c3fef765066fcc4f239f7f32",
+      "src": "https://github.com/haringsrob/laravel-dev-tools"
+    },
     "laravel.nvim": {
       "rev": "0c12031c8c049c423c6c31951beba721115ce6cc",
       "src": "https://github.com/adalessa/laravel.nvim"
@@ -96,6 +100,10 @@
     "nvim-web-devicons": {
       "rev": "dfbfaa967a6f7ec50789bead7ef87e336c1fa63c",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "phptools.nvim": {
+      "rev": "34ea0b46b19849f041b514a4770669e6d0e95224",
+      "src": "https://github.com/ccaglak/phptools.nvim"
     },
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",

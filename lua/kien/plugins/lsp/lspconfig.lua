@@ -125,9 +125,10 @@ local servers = {
 	vtsls = {},
 	intelephense = {
 		root_markers = { "index.php", ".git", "composer.json" },
+		filetypes = { "php", "blade" },
 		settings = {
 			files = {
-				associations = { "*.php" },
+				associations = { "*.php", "*.blade.php" },
 				maxSize = 1000000,
 			},
 			environment = {
@@ -260,6 +261,7 @@ local servers = {
 		},
 	},
 	rust_analyzer = {},
+	laravel_ls = {},
 }
 
 for name, opts in pairs(servers) do

@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "WallSync": {
+      "rev": "435a15a95eab3d6b1c25dce576dab011ab2703c3",
+      "src": "https://github.com/NvChad/WallSync"
+    },
     "base46": {
       "rev": "884b990dcdbe07520a0892da6ba3e8d202b46337",
       "src": "https://github.com/nvchad/base46"

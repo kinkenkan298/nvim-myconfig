@@ -52,4 +52,6 @@ return {
 
 	{ src = gh("haringsrob/laravel-dev-tools") },
 	{ src = gh("ccaglak/phptools.nvim") },
+
+	{ src = gh("NvChad/WallSync") },
 }

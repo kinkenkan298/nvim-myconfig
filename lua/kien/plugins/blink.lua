@@ -31,7 +31,7 @@ blink.setup({
 			},
 		},
 		documentation = {
-			auto_show = true, -- show function signature/docs
+			auto_show = false, -- show function signature/docs
 		},
 		ghost_text = {
 			enabled = false,

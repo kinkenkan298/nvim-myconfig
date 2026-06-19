@@ -136,38 +136,6 @@ local servers = {
 			},
 		},
 	},
-	ts_ls = {
-		workspace_required = false,
-		filetypes = {
-			"javascript",
-			"javascriptreact",
-			"typescript",
-			"typescriptreact",
-		},
-		single_file_support = true,
-		init_options = {
-			preferences = {
-				includeCompletionsForModuleExports = true,
-				includeCompletionsForImportStatements = true,
-			},
-		},
-		settings = {
-			typescript = {
-				inlayHints = {
-					includeInlayParameterNameHints = "all",
-					includeInlayVariableTypeHints = true,
-					includeInlayFunctionParameterTypeHints = true,
-				},
-			},
-			javascript = {
-				inlayHints = {
-					includeInlayParameterNameHints = "none",
-					includeInlayVariableTypeHints = false,
-					includeInlayFunctionParameterTypeHints = false,
-				},
-			},
-		},
-	},
 	emmet_language_server = {
 		filetypes = {
 			"astro",
@@ -268,3 +236,5 @@ for name, opts in pairs(servers) do
 	vim.lsp.config(name, opts)
 	vim.lsp.enable(name)
 end
+
+vim.lsp.enable("phptols")

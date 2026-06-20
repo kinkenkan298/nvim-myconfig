@@ -16,13 +16,14 @@ mason_lspconfig.setup({
 	automatic_enable = true, -- set true to enable all LSP in `ensure_installed`
 	ensure_installed = {
 		"lua_ls",
-		"ts_ls",
+		"vtsls",
 		"html",
 		"cssls",
 		"gopls",
 		"tailwindcss",
 		"emmet_ls",
 		"emmet_language_server",
+		"pyright",
 	},
 })
 

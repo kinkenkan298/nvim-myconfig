@@ -1,7 +1,7 @@
 local config = {
 	formatters_by_ft = {
 		lua = { "stylua" },
-		-- python = { "isort", "black" },
+		python = { "black" },
 		-- You can customize some of the format options for the filetype (:help conform.format)
 		rust = { "rustfmt", lsp_format = "fallback" },
 		-- Conform will run the first available formatter

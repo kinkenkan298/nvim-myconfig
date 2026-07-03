@@ -35,3 +35,5 @@ require("kien.plugins.triforce")
 require("kien.plugins.blade")
 
 require("kien.plugins.phptools")
+
+require("kien.plugins.wallsync")

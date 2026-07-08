@@ -2,6 +2,8 @@ vim.pack.add(require("kien.core.specs"))
 
 require("kien.plugins.auto-pairs")
 
+require("kien.plugins.treesitter")
+
 require("kien.plugins.snacks")
 
 require("kien.plugins.blink")

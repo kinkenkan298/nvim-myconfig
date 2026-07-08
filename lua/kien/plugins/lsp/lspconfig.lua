@@ -153,7 +153,7 @@ local servers = {
 			"templ",
 			"typescriptreact",
 			"vue",
-			"php",
+			"blade",
 		},
 		init_options = {
 			includeLanguages = {},
@@ -219,15 +219,15 @@ local servers = {
 			},
 		},
 	},
-	astro = {
-		filetypes = { "astro" },
-		init_options = {
-			typescript = {
-				tsdk = vim.fn.stdpath("data")
-					.. "/mason/packages/typescript-language-server/node_modules/typescript/lib",
-			},
-		},
-	},
+	-- astro = {
+	-- 	filetypes = { "astro" },
+	-- 	init_options = {
+	-- 		typescript = {
+	-- 			tsdk = vim.fn.stdpath("data")
+	-- 				.. "/mason/packages/typescript-language-server/node_modules/typescript/lib",
+	-- 		},
+	-- 	},
+	-- },
 	rust_analyzer = {},
 	laravel_ls = {},
 }

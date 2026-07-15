@@ -54,7 +54,7 @@ blink.setup({
 	},
 
 	sources = {
-		default = { "lsp", "blade-nav", "path", "buffer", "snippets" },
+		default = { "avante", "lsp", "blade-nav", "path", "buffer", "snippets" },
 		providers = {
 			lsp = {
 				opts = {
@@ -64,6 +64,13 @@ blink.setup({
 			["blade-nav"] = {
 				name = "blade-nav",
 				module = "blade-nav.integrations.blink",
+			},
+			avante = {
+				module = "blink-cmp-avante",
+				name = "Avante",
+				opts = {
+					-- options for blink-cmp-avante
+				},
 			},
 		},
 	},

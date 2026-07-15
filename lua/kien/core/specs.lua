@@ -14,7 +14,6 @@ return {
 
 	{ src = gh("stevearc/conform.nvim") },
 	{ src = gh("nvim-lua/plenary.nvim") },
-
 	{ src = gh("nvim-tree/nvim-web-devicons") },
 	{ src = gh("nvim-lualine/lualine.nvim") },
 
@@ -54,4 +53,8 @@ return {
 	{ src = gh("ccaglak/phptools.nvim") },
 
 	{ src = gh("NvChad/WallSync") },
+
+	{ src = gh("yetone/avante.nvim") },
+
+	{ src = gh("Kaiser-Yang/blink-cmp-avante") },
 }

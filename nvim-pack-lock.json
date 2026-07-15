@@ -4,6 +4,10 @@
       "rev": "435a15a95eab3d6b1c25dce576dab011ab2703c3",
       "src": "https://github.com/NvChad/WallSync"
     },
+    "avante.nvim": {
+      "rev": "2183acf00831a3ab366265ee35eef1a342716694",
+      "src": "https://github.com/yetone/avante.nvim"
+    },
     "base46": {
       "rev": "884b990dcdbe07520a0892da6ba3e8d202b46337",
       "src": "https://github.com/nvchad/base46"
@@ -11,6 +15,10 @@
     "blade-nav.nvim": {
       "rev": "7ac80b57dbeae975a795fe7ce94ad168dfda7ffa",
       "src": "https://github.com/ricardoramirezr/blade-nav.nvim"
+    },
+    "blink-cmp-avante": {
+      "rev": "4f494c6e124acbe31a8f5d58effa0c14aa38a6d5",
+      "src": "https://github.com/Kaiser-Yang/blink-cmp-avante"
     },
     "blink.cmp": {
       "rev": "b02ac65634bdb8af2dcc4eb6c807c060e1e15ae6",

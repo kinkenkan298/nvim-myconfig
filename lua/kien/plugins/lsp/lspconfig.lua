@@ -213,6 +213,7 @@ local servers = {
 					library = {
 						vim.fn.expand("$VIMRUNTIME/lua"),
 						vim.fn.stdpath("data") .. "/site/pack/core/opt/ui/nvchad_types",
+						"/usr/share/hypr/stubs",
 						"${3rd}/luv/library",
 					},
 				},

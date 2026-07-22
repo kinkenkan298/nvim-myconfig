@@ -53,8 +53,4 @@ return {
 	{ src = gh("ccaglak/phptools.nvim") },
 
 	{ src = gh("NvChad/WallSync") },
-
-	{ src = gh("yetone/avante.nvim") },
-
-	{ src = gh("Kaiser-Yang/blink-cmp-avante") },
 }

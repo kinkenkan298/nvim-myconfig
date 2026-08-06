@@ -25,7 +25,7 @@ if require("nvconfig").ui.tabufline.enabled then
 end
 
 require("showkeys").setup({
-	maxkeys = 3,
+	maxkeys = 4,
 	show_count = false,
 	position = "bottom-center",
 

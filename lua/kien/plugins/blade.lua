@@ -6,8 +6,8 @@ require("blade-nav").setup({
 	debug = false,
 
 	-- Completion behavior
-	close_tag_on_complete = true,
-	include_routes_in_cmp = true,
+	close_tag_on_complete = false,
+	include_routes_in_cmp = false,
 
 	-- Inertia
 	inertia_pages_path = nil, -- nil = "Pages" (default)

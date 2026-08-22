@@ -16,7 +16,7 @@ require("kien.plugins.conform-format")
 require("kien.plugins.noice")
 require("kien.plugins.colorizer")
 
-require("kien.plugins.nvchad")
+-- require("kien.plugins.nvchad")
 
 require("kien.plugins.tiny-diagnostic")
 
@@ -39,3 +39,5 @@ require("kien.plugins.blade")
 require("kien.plugins.phptools")
 
 require("kien.plugins.wallsync")
+
+require("kien.plugins.caelestia")
